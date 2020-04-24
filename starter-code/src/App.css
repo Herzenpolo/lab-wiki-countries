@@ -30,3 +30,12 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-light {
+  width: 200px;
+}
+
+
+.country-container{
+  width: 100% !important;
+}
