@@ -9,14 +9,14 @@ class Home extends Component {
 
     showCountries = () => {
         let links = countries.map(eachCountry => {
-            return <li className="countries-list"><button type="button" class="btn btn-light"><Link to={`/country/${eachCountry.cca3}`}>{eachCountry.flag}{eachCountry.name.common}</Link></button></li>})
+            return <li className="countries-list"><button type="button" className="btn btn-light"><Link to={`/country/${eachCountry.cca3}`}>{eachCountry.flag}{eachCountry.name.common}</Link></button></li>})
         return links
     }
 
     render() {
 
         return (
-            <div>
+            <div id="countries-list">
                 {this.showCountries()}
             </div>
         );
